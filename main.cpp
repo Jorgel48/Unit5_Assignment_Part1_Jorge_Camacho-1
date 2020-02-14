@@ -10,6 +10,7 @@ double weeklyPay(double, double,string,int);// function prototype
 
 int main( )
 {    
+  locale loc; 
          //a function call for each person - no input from the console for part 1
          cout << fixed << setprecision(2); 
          cout << weeklyPay (47.0, 505.75,"Jorge",1) << endl;
@@ -20,9 +21,16 @@ int main( )
          "Mika",3) << endl;
          cout << weeklyPay (25.0, 15.0,"Eldridge",4) << endl;
          cout << weeklyPay (55.0, 203.50, "Freedom",5) << endl;
+        string sentence = "TCC- TR is cool";
+        for (int i = 0; i < sentence.length(); i ++)
+        {
+        cout << toupper(sentence[i], loc);
+        }
 
-
-        
+        sentence = "i will succed at c++";
+        for (int i=0; i <sentence.length(); i ++){
+        cout << tolower(sentence[i], loc);
+        }
   return 0;
 }
 
